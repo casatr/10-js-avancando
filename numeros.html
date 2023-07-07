@@ -6,7 +6,7 @@
     <title>Analisador de Números</title>
 
 </head>
-<body onload="carregar()">
+<body>
     <style>
         body{
             background: rgb(70, 142,236);
@@ -45,11 +45,11 @@
     </header>
     <section>
         <div>
-            Número (entre1 e 100):
+            Número (entre 1 e 100):
             <input type="number" name="fnum" id="fnum">
             <input type="button" value="Adicionar" onclick="adicionar()">
             <br><br><select name="flista" id="flista" size="6"></select>
-            <br><input type=" button" value="Finalizar" onclick="finalizar()">
+            <br><button type=" button" value="Finalizar" onclick="finalizar()"></button>
         </div>
         <div id="res">
             
@@ -113,9 +113,9 @@
                 }
                 media = soma / tot
                 res.innerHTML = ''
-                res.innerHTML += `<p>Ao todo, temos ${tot} núneros cadastrados.</p>`
-                res.innerHTML += `<p>0 maior valor informado foi ${maior}.</p>`
-                res.innerHTML += `<p>0 menor valor informado foi ${menor}.</p>`
+                res.innerHTML += `<p>Ao todo, temos ${tot} números cadastrados.</p>`
+                res.innerHTML += `<p>O maior valor informado foi ${maior}.</p>`
+                res.innerHTML += `<p>O menor valor informado foi ${menor}.</p>`
                 res.innerHTML += `<p>Somando todos os valores, temos ${soma}.</p>`
                 res.innerHTML += `<p>A média de valores digitados é ${media}</p>`
             }
